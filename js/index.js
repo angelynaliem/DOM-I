@@ -59,6 +59,33 @@ button.textContent = siteContent["cta"]["button"];
 let imgSrc = document.getElementById("cta-img");
 imgSrc.setAttribute('src', siteContent["cta"]["img-src"]);
 
+// let featuresh4 = document.querySelector(".main-content", ".top-content", ".text-content", "h4");
+// featuresh4.textContent = siteContent["main-content"]["features-h4"];
+
+// let featuresContent = document.querySelector(".main-content", ".top-content", ".text-content", "p");
+// featuresContent.textContent = siteContent["main-content"]["features-content"];
+
+let h4s = document.querySelectorAll("h4");
+
+let featuresh4 = h4s[0].textContent = siteContent["main-content"]["features-h4"];
+let abouth4 = h4s[1].textContent = siteContent["main-content"]["about-h4"];
+let servicesh4 = h4s[2].textContent = siteContent["main-content"]["services-h4"];
+let producth4 = h4s[3].textContent = siteContent["main-content"]["product-h4"];
+let visionh4 = h4s[4].textContent = siteContent["main-content"]["vision-h4"];
+
+let middleImgSrc = document.getElementById("middle-img");
+middleImgSrc.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let ps = document.querySelectorAll("p");
+
+let featuresContent = ps[0].textContent = siteContent["main-content"]["features-content"];
+let aboutContent = ps[1].textContent = siteContent["main-content"]["about-content"];
+let servicesContent = ps[2].textContent = siteContent["main-content"]["services-content"];
+let productContent = ps[3].textContent = siteContent["main-content"]["product-content"];
+let visionContent = ps[4].textContent = siteContent["main-content"]["vision-content"];
+
+
+
 
 
 
