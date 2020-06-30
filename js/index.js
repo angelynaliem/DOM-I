@@ -59,12 +59,6 @@ button.textContent = siteContent["cta"]["button"];
 let imgSrc = document.getElementById("cta-img");
 imgSrc.setAttribute('src', siteContent["cta"]["img-src"]);
 
-// let featuresh4 = document.querySelector(".main-content", ".top-content", ".text-content", "h4");
-// featuresh4.textContent = siteContent["main-content"]["features-h4"];
-
-// let featuresContent = document.querySelector(".main-content", ".top-content", ".text-content", "p");
-// featuresContent.textContent = siteContent["main-content"]["features-content"];
-
 let h4s = document.querySelectorAll("h4");
 
 let featuresh4 = h4s[0].textContent = siteContent["main-content"]["features-h4"];
@@ -88,6 +82,19 @@ let address = ps[5].textContent = siteContent["contact"]["address"];
 let phone = ps[6].textContent = siteContent["contact"]["phone"];
 let email = ps[7].textContent = siteContent["contact"]["email"];
 let copyright = ps[8].textContent = siteContent["footer"]["copyright"];
+
+navItems[0].style.color = 'green';
+navItems[1].style.color = 'green';
+navItems[2].style.color = 'green';
+navItems[3].style.color = 'green';
+navItems[4].style.color = 'green';
+navItems[5].style.color = 'green';
+navItems[6].style.color = 'green';
+
+
+
+
+
 
 
 
