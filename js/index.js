@@ -72,6 +72,7 @@ let abouth4 = h4s[1].textContent = siteContent["main-content"]["about-h4"];
 let servicesh4 = h4s[2].textContent = siteContent["main-content"]["services-h4"];
 let producth4 = h4s[3].textContent = siteContent["main-content"]["product-h4"];
 let visionh4 = h4s[4].textContent = siteContent["main-content"]["vision-h4"];
+let contacth4 = h4s[5].textContent = siteContent["contact"]["contact-h4"];
 
 let middleImgSrc = document.getElementById("middle-img");
 middleImgSrc.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
@@ -83,7 +84,10 @@ let aboutContent = ps[1].textContent = siteContent["main-content"]["about-conten
 let servicesContent = ps[2].textContent = siteContent["main-content"]["services-content"];
 let productContent = ps[3].textContent = siteContent["main-content"]["product-content"];
 let visionContent = ps[4].textContent = siteContent["main-content"]["vision-content"];
-
+let address = ps[5].textContent = siteContent["contact"]["address"];
+let phone = ps[6].textContent = siteContent["contact"]["phone"];
+let email = ps[7].textContent = siteContent["contact"]["email"];
+let copyright = ps[8].textContent = siteContent["footer"]["copyright"];
 
 
 
