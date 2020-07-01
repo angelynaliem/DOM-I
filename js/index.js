@@ -43,23 +43,26 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
 // Get the nav items to show up. WHY DO WE NEED TO PUT INDEX 0 HERE?
-let navItems = document.querySelector("nav");
+let navItems = document.querySelectorAll("a");
 
-let navItem1 = navItems.children[0].textContent = siteContent["nav"]["nav-item-1"];
-let navItem2 = navItems.children[1].textContent = siteContent["nav"]["nav-item-2"];
-let navItem3 = navItems.children[2].textContent = siteContent["nav"]["nav-item-3"];
-let navItem4 = navItems.children[3].textContent = siteContent["nav"]["nav-item-4"];
-let navItem5 = navItems.children[4].textContent = siteContent["nav"]["nav-item-5"];
-let navItem6 = navItems.children[5].textContent = siteContent["nav"]["nav-item-6"];
+let navItem1 = navItems[0].textContent = siteContent["nav"]["nav-item-1"];
+let navItem2 = navItems[1].textContent = siteContent["nav"]["nav-item-2"];
+let navItem3 = navItems[2].textContent = siteContent["nav"]["nav-item-3"];
+let navItem4 = navItems[3].textContent = siteContent["nav"]["nav-item-4"];
+let navItem5 = navItems[4].textContent = siteContent["nav"]["nav-item-5"];
+let navItem6 = navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
 // Add two new nav items using append and prepend
+let navigation = document.querySelector("nav");
 let newNavItem1 = document.createElement("a");
 newNavItem1.textContent = "Sign Up";
-navItems.appendChild(newNavItem1);
+newNavItem1.style.color = "green";
+navigation.appendChild(newNavItem1);
 
 let newNavItem2 = document.createElement("a");
 newNavItem2.textContent = "Log In";
-navItems.prepend(newNavItem2);
+newNavItem2.style.color = "green";
+navigation.prepend(newNavItem2);
 
 // Get h1 text to show up
 let h1 = document.querySelector("h1");
@@ -101,14 +104,15 @@ let email = ps[7].textContent = siteContent["contact"]["email"];
 let copyright = ps[8].textContent = siteContent["footer"]["copyright"];
 
 // Change the nav items color to green
-navItems.children[0].style.color = 'green';
-navItems.children[1].style.color = 'green';
-navItems.children[2].style.color = 'green';
-navItems.children[3].style.color = 'green';
-navItems.children[4].style.color = 'green';
-navItems.children[5].style.color = 'green';
-navItems.children[6].style.color = 'green';
-newNavItem1.style.color = "green";
+navItems[0].style.color = 'green';
+navItems[1].style.color = 'green';
+navItems[2].style.color = 'green';
+navItems[3].style.color = 'green';
+navItems[4].style.color = 'green';
+navItems[5].style.color = 'green';
+navItems[6].style.color = 'green';
+
+
 
 
 
