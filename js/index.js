@@ -67,6 +67,8 @@ navigation.prepend(newNavItem2);
 // Get h1 text to show up
 let h1 = document.querySelector("h1");
 h1.textContent = siteContent["cta"]["h1"];
+h1.textContent = "DOM\nIs\nAwesome";
+h1.style = "white-space: pre";
 
 // Get button content to show up
 let button = document.querySelector("button");
@@ -99,6 +101,10 @@ let servicesContent = ps[2].textContent = siteContent["main-content"]["services-
 let productContent = ps[3].textContent = siteContent["main-content"]["product-content"];
 let visionContent = ps[4].textContent = siteContent["main-content"]["vision-content"];
 let address = ps[5].textContent = siteContent["contact"]["address"];
+
+ps[5].textContent = "123 Way 456 Street \n Somewhere, USA";
+ps[5].style = "white-space: pre";
+
 let phone = ps[6].textContent = siteContent["contact"]["phone"];
 let email = ps[7].textContent = siteContent["contact"]["email"];
 let copyright = ps[8].textContent = siteContent["footer"]["copyright"];
