@@ -73,6 +73,9 @@ h1.style = "white-space: pre";
 // Get button content to show up
 let button = document.querySelector("button");
 button.textContent = siteContent["cta"]["button"];
+button.addEventListener('click', () => {
+  window.location.assign("https://www.google.com/");
+})
 
 // Get the round image to show up
 let imgSrc = document.getElementById("cta-img");
